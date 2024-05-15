@@ -1,4 +1,4 @@
-.custombutton {
+.BlueButton {
     position: relative;
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
@@ -17,9 +17,10 @@
     outline: none;
     overflow: hidden;
     font-size: 15px;
+    min-width: 130px;
   }
 
-  .custombutton a:hover{
+  .BlueButton a:hover{
     color: #000;
   }
   
@@ -29,20 +30,20 @@
     transition: all 0.3s ease-in-out;
   }
   
-  .custombutton:hover {
+  .BlueButton:hover {
     transform: scale(1.05);
     border-color: #fff9;
   }
   
-  .custombutton:hover .icon {
+  .BlueButton:hover .icon {
     transform: translate(4px);
   }
   
-  .custombutton:hover::before {
+  .BlueButton:hover::before {
     animation: shine 1.5s ease-out infinite;
   }
   
-  .custombutton::before {
+  .BlueButton::before {
     content: "";
     position: absolute;
     width: 100px;

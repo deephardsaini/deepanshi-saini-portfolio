@@ -1,0 +1,90 @@
+{
+    "techstack": [
+        {
+            "id": "1",
+            "title": "a title",
+            "views": 100,
+            "img": "https://bhavya.dev/assets/icons/typescript.svg"
+        },
+        {
+            "id": "2",
+            "title": "another title",
+            "views": 200,
+            "img": "https://bhavya.dev/assets/icons/materialui.svg"
+        },
+        {
+            "id": "3",
+            "title": "Javascript",
+            "views": 0,
+            "img": "https://bhavya.dev/assets/icons/javascript.svg"
+        },
+        {
+            "id": "4",
+            "title": "React",
+            "views": 0,
+            "img": "https://bhavya.dev/assets/icons/react.png"
+        },
+        {
+            "id": "5",
+            "title": "HTML5",
+            "views": 0,
+            "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+        },
+        {
+            "id": "6",
+            "title": "Bootstrap",
+            "views": 0,
+            "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+        },
+        {
+            "id": "7",
+            "title": "Firebase",
+            "views": 0,
+            "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+        }
+    ],
+    "projects": [
+        {
+            "id": "1",
+            "img": "/Screenshot.png",
+            "des": "This To-Do Board allows users to add tasks through an input field and displays them as individual cards on the board. Users can interact with the tasks, potentially editing or deleting them.",
+            "head": "To-Do Board",
+            "stack": [
+                "https://bhavya.dev/assets/icons/react.png",
+                "https://bhavya.dev/assets/icons/javascript.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            ],
+            "githubLink": "https://github.com/deephardsaini/react-project/tree/main/02-todo-board",
+            "liveLink": "https://legendary-klepon-9e5364.netlify.app"
+        },
+        {
+            "id": "2",
+            "img": "/stopwatch.png",
+            "des": "It Allows users to record intermediate times while the stopwatch continues running. This feature is particularly useful in sports to track individual segments of a race or in scientific experiments to record data at specific intervals.",
+            "head": "StopWatch",
+            "stack": [
+                "https://bhavya.dev/assets/icons/react.png",
+                "https://bhavya.dev/assets/icons/javascript.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            ],
+            "githubLink": "https://github.com/deephardsaini/react-project/tree/main/stop-watch",
+            "liveLink": "#"
+        },
+        {
+            "id": "3",
+            "img": "/nested-list.png",
+            "des": "In React.js, nested lists are essentially arrays of data structures that contain other arrays or objects within them. They're commonly used when you have hierarchical data structures or need to represent data in a nested format, such as a tree or a multi-level menu.",
+            "head": "List With Nested Array",
+            "stack": [
+                "https://bhavya.dev/assets/icons/react.png",
+                "https://bhavya.dev/assets/icons/javascript.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            ],
+            "githubLink": "https://github.com/deephardsaini/react-project/tree/main/nested-list-table",
+            "liveLink": "#"
+        }
+    ]
+}

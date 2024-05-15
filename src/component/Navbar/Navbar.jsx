@@ -18,8 +18,9 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import ResumeButton from "./CustomButton/ResumeButton";
+
 import { Link } from "react-scroll";
+import GreenButton from "../Ui/GreenButton/GreenButton";
 
 const Links = ["Home","About", "Skills","Projects","Contact Us"];
 
@@ -48,7 +49,7 @@ export default function Navbar() {
 
   return (
     <>
-      <Box bg={useColorModeValue("glass-bg-2", "red.900")} px={4}>
+      <Box bg={useColorModeValue("glass-bg-2", "red.900")}>
         <Flex
           h={16}
           alignItems={"center"}
@@ -88,13 +89,14 @@ export default function Navbar() {
                   offset={0}
                   to={link}
                   key={link}
+                  color="white"
                 >
                   {link}
                 </Link>
               ))}
               
             </HStack>
-            <ResumeButton />
+            <GreenButton>Resume</GreenButton>
           </HStack>
           {/* <Flex alignItems={'center'}>
             <Menu>
@@ -116,8 +118,9 @@ export default function Navbar() {
         </Flex>
 
         {isOpen ? (
-          <Box pb={4} display={{ md: "none" }}>
-            <Stack as={"nav"} spacing={4}>
+          <Box  background={"rgba(72, 70, 98, .4)"}
+          box-shadow={"0 8px 32px 0 rgba(31, 38, 135, .37)"} py={4} display={{ md: "none" } }>
+            <Stack as={"nav"} spacing={4} color="white" padding={"20px"} >
               {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
               ))}

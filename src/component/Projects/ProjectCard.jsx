@@ -12,17 +12,19 @@ import {
   Box,
   useColorModeValue,
 } from "@chakra-ui/react";
-import CustomButton from "../CustomButton/CustomButton";
+import BlueButton from "../Ui/BlueButton/BlueButton";
+import GreenButton from "../Ui/GreenButton/GreenButton";
 
-export default function ProjectCard({ img, head, des, stack,githubLink,liveLink}) {
-  console.log("githubLink", githubLink)
+
+export default function ProjectCard(props) {
+
   return (
     <Center py={6}>
       <Stack
         borderWidth="1px"
         borderRadius="lg"
         w={{ sm: "100%", md: "1100px" }}
-        height={{ sm: "80px", md: "25rem" }}
+        height={{ sm: "620px", md: "25rem" }}
         direction={{ base: "column", md: "row" }}
         // eslint-disable-next-line react-hooks/rules-of-hooks
         background={"rgba(72, 70, 98, .4)"}
@@ -30,7 +32,7 @@ export default function ProjectCard({ img, head, des, stack,githubLink,liveLink}
         padding={4}
       >
         <Flex flex={1.5} bg="blue.200">
-          <Image objectFit="cover" boxSize="100%" Image src={img} alt="#" />
+          <Image objectFit="cover" boxSize="100%" height={{sm:"250px"}} Image src={props.data.img} alt="#" />
         </Flex>
         <Stack
           flex={1}
@@ -46,15 +48,15 @@ export default function ProjectCard({ img, head, des, stack,githubLink,liveLink}
             color={"rgb(0 107 179)"}
             marginBottom={"2"}
           >
-            {head}
+            {props.data.head}
           </Heading>
 
           <Text color={useColorModeValue("white")} px={3}>
-           {des}
+           {props.data.des}
           </Text>
 
           <Box display={"flex"} gap={"3"} marginTop={"5"}>
-            {stack?.map((item) => {
+            {props.data.stack?.map((item) => {
               return <Image width={"40px"} src={item} alt="#" />;
             })}
           </Box>
@@ -66,20 +68,14 @@ export default function ProjectCard({ img, head, des, stack,githubLink,liveLink}
             justifyContent={"space-between"}
             alignItems={"center"}
           >
-            <Button
-              flex={1}
-              fontSize={"sm"}
-              rounded={"full"}
-              _focus={{
-                bg: "gray.200",
-              }}
+            <GreenButton
             >
-             <a href={githubLink}>Github</a>
-            </Button>
+             <a href={props.data.githubLink}>Github</a>
+            </GreenButton>
 
-            <CustomButton>
-              <a href={liveLink}>Live</a>
-            </CustomButton>
+            <BlueButton>
+              <a href={props.data.liveLink}>Live</a>
+            </BlueButton>
           </Stack>
         </Stack>
       </Stack>

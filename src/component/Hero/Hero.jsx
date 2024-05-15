@@ -14,9 +14,9 @@ import {
   createIcon,
   useColorModeValue,
 } from "@chakra-ui/react";
-import ResumeButton from "./CustomButton/ResumeButton";
-import CustomButton from "./CustomButton/CustomButton";
 import Typewriter from "typewriter-effect";
+import GreenButton from "../Ui/GreenButton/GreenButton";
+import BlueButton from "../Ui/BlueButton/BlueButton";
 
 export default function Hero() {
   return (
@@ -88,8 +88,8 @@ export default function Hero() {
                             Resume
                         </Button> */}
 
-            <ResumeButton />
-            <CustomButton><a href="">Contact Me</a></CustomButton>
+            <BlueButton>Contact Me</BlueButton>
+            <GreenButton><a href="">Resume</a></GreenButton>
           </Stack>
         </Stack>
         <Flex

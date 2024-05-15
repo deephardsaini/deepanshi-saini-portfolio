@@ -27,8 +27,9 @@ import {
   MdOutlineEmail,
 } from 'react-icons/md'
 import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs'
-import CustomButton from '../CustomButton/CustomButton'
+
 import { FaLinkedin } from "react-icons/fa";
+import GreenButton from '../Ui/GreenButton/GreenButton';
 
 export default function ContactUsForm() {
   return (
@@ -155,7 +156,7 @@ export default function ContactUsForm() {
                         />
                       </FormControl>
                       <FormControl id="name" float="right">
-                      <CustomButton><a href="#">Contact Me</a></CustomButton>
+                      <GreenButton><a href="#">Contact Me</a></GreenButton>
                       </FormControl>
                     </VStack>
                   </Box>

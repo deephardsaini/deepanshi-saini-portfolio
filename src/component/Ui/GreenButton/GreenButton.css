@@ -13,6 +13,7 @@
     cursor: pointer;
     border-radius: 9999px;
     border: 3px solid #ffffff4d;
+    min-width: 130px;
   }
   
   .gradient .gradient {
